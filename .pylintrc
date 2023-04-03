@@ -1,2 +1,3 @@
 [MASTER]
 extension-pkg-allow-list=pydantic
+extension-pkg-allow-list=iris.router
