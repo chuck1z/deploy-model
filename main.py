@@ -1,13 +1,16 @@
-import uvicorn  # ASGI
+import uvicorn
 from enum import Enum
 from pydantic import BaseModel
 from fastapi import FastAPI, HTTPException, Path, Query
 import tensorflow as tf
 import numpy as np
+import os
 
 app = FastAPI()  # create a new FastAPI app instance
 
 # Define a Pydantic model for an item
+
+port = int(os.getenv("PORT"))
 
 
 class Item(BaseModel):
@@ -56,4 +59,4 @@ def add_item(item: Item):
 
 
 if __name__ == '__main__':
-    uvicorn.run(app, host='0.0.0.0', port=8080)
+    uvicorn.run(app, host="0.0.0.0", port=port, timeout_keep_alive=1200)
