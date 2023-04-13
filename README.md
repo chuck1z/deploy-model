@@ -1,4 +1,4 @@
-# deploy-model
+# Iris flower classification using FastAPI
 
 Python Notebook: <br>
 https://www.kaggle.com/code/venkatkrishnan/iris-data-tensorflow-neural-network
