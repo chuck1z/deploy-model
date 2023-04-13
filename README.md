@@ -1,7 +1,7 @@
 # deploy-model
 
-So you guys have learned how to deploy a backend server using NodeJS
+Loading a model using TFJS: <br>
+https://www.tensorflow.org/js/guide/save_load
 
-Here we will learn that but instead of JavaScript, we'll be using Python and instead of NodeJS, we'll be using uvicorn
-
-Use pipreqs to automatically create requirements.txt
+Converting h5 to json: <br>
+https://www.tensorflow.org/js/guide/conversion
