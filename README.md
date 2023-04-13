@@ -14,9 +14,9 @@ If no item corresponds to the provided item_id, raises a 404 Not Found error. <b
 ### 3. Query item by parameters <br>
 Endpoint: GET `/items/` <br>
 Query parameters: <ul>
-<li>name: (optional) string representing the name of the item to be queried. <br>
-<li>price: (optional) float representing the price of the item to be queried. <br>
-<li>count: (optional) integer representing the count of the item to be queried. <br>
+<li>name: (optional) string representing the name of the item to be queried.
+<li>price: (optional) float representing the price of the item to be queried.
+<li>count: (optional) integer representing the count of the item to be queried.
 <li>category: (optional) string representing the category of the item to be queried. </ul>
 Returns the items that match the provided query parameters. <br>
 If no item matches the query parameters, returns an empty selection. <br>
@@ -33,7 +33,7 @@ If the item ID already exists in the data, raises a 400 Bad Request error. <br>
 Endpoint: PUT `/update/{item_id}` <br>
 Path parameter: <ul>
 <li>item_id: integer representing the id of the item to be updated. </ul>
-Query parameters (all optional): <ul>
+Query parameters (all optional): <ul><br>
 <li>name: string representing the new name of the item.
 <li>price: float representing the new price of the item.
 <li>count: integer representing the new count of the item. </ul>
