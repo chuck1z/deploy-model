@@ -1,7 +1,10 @@
 # deploy-model
 
-So you guys have learned how to deploy a backend server using NodeJS
+Python Notebook: <br>
+https://www.kaggle.com/code/venkatkrishnan/iris-data-tensorflow-neural-network
 
-Here we will learn that but instead of JavaScript, we'll be using Python and instead of NodeJS, we'll be using uvicorn
+Run using: <br>
+`uvicorn main:app`
 
-Use pipreqs to automatically create requirements.txt
+Don't forget that FastAPI supports API preview through: <br> 
+`http://<ip>:<port>/docs`
