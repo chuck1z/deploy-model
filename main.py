@@ -5,12 +5,23 @@ from fastapi import FastAPI, HTTPException, Path, Query
 import tensorflow as tf
 import numpy as np
 import os
+from google.oauth2 import service_account
+from google.cloud import storage
+from config import get_config
 
+with open("service_account.json", "w") as file:
+    file.write(json_svc_account)
+
+credentials = service_account.Credentials.from_service_account_file(
+    "./service_account.json"
+)
+
+gcs = storage.Client(credentials=credentials)
+
+# URL of the image to be downloaded is defined as image_url
 app = FastAPI()  # create a new FastAPI app instance
 
 # Define a Pydantic model for an item
-
-port = int(os.getenv("PORT"))
 
 
 class Item(BaseModel):
@@ -20,6 +31,7 @@ class Item(BaseModel):
     pw: float
 
 
+model_url = "https://www.python.org/static/community_logos/python-logo-master-v3-TM.png"
 model = tf.keras.models.load_model('./model/somethingidk.h5')
 
 
