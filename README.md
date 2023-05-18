@@ -1,4 +1,4 @@
-# Basic REST api using FastAPI
+# Basic REST API using FastAPI
 
 ### 1. Index
 Endpoint: GET `/` <br>
