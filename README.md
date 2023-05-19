@@ -7,6 +7,10 @@ The Iris flower data set is a multivariate data set introduced by the British st
 Python Notebook: <br>
 https://www.kaggle.com/code/venkatkrishnan/iris-data-tensorflow-neural-network
 
+Saving model
+* h5 = model.save('/kaggle/working/something.h5')
+* pb = tf.saved_model.save(model, "my_model")
+
 Run using: <br>
 `uvicorn main:app`
 
