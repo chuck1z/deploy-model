@@ -9,7 +9,8 @@ https://www.kaggle.com/code/venkatkrishnan/iris-data-tensorflow-neural-network
 
 Saving model
 * h5 = model.save('/kaggle/working/something.h5')
-* pb = tf.saved_model.save(model, "my_model")
+* pb = tf.saved_model.save(model, "my_model") <br>
+       !zip -r /kaggle/working/my_model .
 
 Run using: <br>
 `uvicorn main:app`
