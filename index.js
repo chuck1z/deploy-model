@@ -6,15 +6,6 @@ require('dotenv').config()
 
 const app = express(); // create a new Express app instance
 
-class Item {
-  constructor(sl, sw, pl, pw) {
-    this.sl = sl;
-    this.sw = sw;
-    this.pl = pl;
-    this.pw = pw;
-  }
-}
-
 const port = parseInt(process.env.PORT);
 
 const loadModel = async () => {
@@ -53,8 +44,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/', (req, res) => {
-  const item = new Item(req.body.sl, req.body.sw, req.body.pl, req.body.pw);
-  const result = predict(item.sl, item.sw, item.pl, item.pw);
+  const result = predict(req.body.sl, req.body.sw, req.body.pl, req.body.pw);
   res.json({ result });
 });
 
