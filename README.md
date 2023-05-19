@@ -1,6 +1,6 @@
 # deploy-model
 
-Method: POST
+Method: POST <br>
 Request:
 ```json
 {
