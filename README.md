@@ -1,3 +1,12 @@
+# Deploy Model
+
+Deploying an ML model may sound scary. We don't learn Tensorflow, model training, or even python as a CC participant. <br>
+Through this repo, you can see the many ways you can deploy a model. <br>
+1. The `starting-point` branch covers all the basic FastAPI stuffs, how a Rest API code looks like using python as its programming language
+2. The `FastAPI-using-own-model` branch can be used as an example on model "deployment" using FastAPI
+3. The `Express-TFJS` branch is an example of model "deployment" using nodejs. It requires extra work, you have to convert your model to json and its performance is not as good as native python
+4. The `TF-Serving` and `TF-Serving-API` branches are used in tandem for TF Serving implementation. TF Serving is only used to host the model and the API can be used as an example of how to redirect request to a TF Serving backend. You can also ask your MD peer to make a direct request instead of making another API
+
 # FastAPI
 
 FastAPI is a modern web framework for building RESTful APIs in Python. It was first released in 2018 and has quickly gained popularity among developers due to its ease of use, speed and robustness. FastAPI is based on Pydantic and type hints to validate, serialize, and deserialize data.
