@@ -12,8 +12,6 @@ class Category(Enum):
     VEGGIES = "vegetables"
 
 # Define a Pydantic model for an item
-
-
 class Item(BaseModel):
     name: str
     price: float
