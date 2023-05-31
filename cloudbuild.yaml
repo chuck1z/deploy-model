@@ -14,6 +14,7 @@
    - 'somethingidkkkkkkkkkkkkk'
    - '--image'
    - 'gcr.io/$PROJECT_ID/somethingidkkkkkkkkkkkkk:$COMMIT_SHA'
+#    delete the line below if you want auth (using gcloud iap)
    - '--allow-unauthenticated'
    - '--region'
    - 'asia-southeast2'
